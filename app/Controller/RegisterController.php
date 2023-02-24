@@ -16,7 +16,7 @@ class RegisterController
     }
 
     public function index(){
-
+        Application::$app->controller::setLayout('auth');
         return Application::$app->router->renderView('register' );
     }
 

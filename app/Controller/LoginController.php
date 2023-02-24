@@ -20,6 +20,7 @@ class LoginController
     }
 
     public function index(){
+        Application::$app->controller::setLayout('auth');
         return Application::$app->router->renderView('login');
     }
 
