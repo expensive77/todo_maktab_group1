@@ -5,6 +5,7 @@ namespace App;
 class Application
 {
     public Router $router;
+    public Controller $controller;
     public static Application $app;
     public Request $request;
 
@@ -13,6 +14,7 @@ class Application
         $this->request = new Request();
         self::$app = $this;
         $this->router = new Router($this->request);
+        $this->controller = new Controller();
     }
 
     public function run(){

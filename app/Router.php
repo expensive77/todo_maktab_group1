@@ -44,7 +44,8 @@ class Router
 
     protected function layoutContent(){
         ob_start();
-        include_once __DIR__ ."/../views/layouts/main.php";
+        $layout = Application::$app->controller::$layout;
+        include_once __DIR__ ."/../views/layouts/$layout.php";
         return ob_get_clean();
 
     }
