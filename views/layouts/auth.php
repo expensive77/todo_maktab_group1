@@ -10,6 +10,10 @@
 </head>
 <body>
     <div class="container">
+        <form class = "my-4">
+            <a name="register" id="" class="btn btn-secondary" href="/register" role="button">register</a>
+            <a name="login" id="" class="btn btn-info" href="/login" role="button">login</a>
+        </form>
         {{content}}
     </div>
 
