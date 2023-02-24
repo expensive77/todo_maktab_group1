@@ -3,7 +3,7 @@
 return [
     'driver' => 'mysql',
     'host' => 'localhost',
-    'dbname' => 'student',
+    'dbname' => 'todo',
     'username' => 'root',
     'password' => ''
 ];
